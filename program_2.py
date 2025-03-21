@@ -5,19 +5,23 @@
 # and the first word starts with an uppercase.  
 # For example the string "StopAndSmellTheRoses" would be converted to "Stop and smell the roses."
 
-# Start your changes on line 13
 
-def word_separator(sentence):
+#Tanner Rosenthal
+#3/19/25
+#Sentence Fixer
 
-    new_sentence = ""
-    #    Add your logic here
+sentence = input("enter a sentence in camel case")
 
-    return new_sentence.strip()
+def fix_sentence(sentence):
+    fixed_sentence = sentence[0].upper()
+    for char in sentence[1:]:
+        if char.isupper():
+            fixed_sentence += " " + char.lower()
 
-# Example usage
+        else:
+            fixed_sentence += char
 
-sentence = "StopAndSmellTheRoses"
+    print(fixed_sentence)
 
-new_sentence = word_separator(sentence)
-
-print(new_sentence)
+print("Your sentence can be written as: ")
+fix_sentence(sentence)

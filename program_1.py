@@ -3,17 +3,19 @@
 # and displays their first, middle, and last initials.  
 # For example, if the user enters John William Smith, the program should display J. W. S.
 
-# Add your logic starting on line 11
+#Tanner Rosenthal
+#3/19/25
+#Initials
 
-def initials_generator(personsName):
+def split_initials(name):
+    name = name.split()
 
-    personsInitials = ""
-    #    Add your logic here
+    for words in name:
+        print(f"{words[0].upper()}.", end='')
+        
 
-    return personsInitials.strip()
 
-personsName = input('Enter the users first, middle, and last name')
+full_name = input("What is your full name?")
+print("Your initals are ", end='')
 
-initials = initials_generator(personsName)
-
-print(initials)
+split_initials(full_name)
