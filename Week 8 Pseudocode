@@ -1,0 +1,30 @@
+START
+	Create a function named function
+
+		Make a while loop set to work While True
+			Get course id from user and assign it to course_id
+			Make an IF loop that iterates if the course_id equals done
+				Break from the entire loop
+
+			Ask user for course name and assign it to course_name
+			Add course_id: course_name into the dictionary courses
+		Return courses
+
+
+	Call function and assign it to courses
+Get subject from user to search for and assign it to subject
+Print “The courses found in (subject):”
+
+Set found equal to false 
+Make For loop that iterates over each key in courses dictionary
+Make an if loop that iterates if course_id starts with subject
+		Print the course id and course name
+		Set found equal to true
+
+	Make an if statement that iterates if found equals false
+		Print “No courses were found”
+END
+		
+
+
+
